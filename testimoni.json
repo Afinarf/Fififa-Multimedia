@@ -1,0 +1,38 @@
+[
+    {
+        "avatar": "https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D",
+        "name": "Aburizal Ahmad",
+        "stars": 5,
+        "testimonial": "Terima kasih barang dan pelayanannya top markotop, kualitas lcd proyektornya dan layar bagus banget, rental terpercaya."
+    },
+    {
+        "avatar": "asset/wilsonsarah.jpg",
+        "name": "Sarah Wijaya Kusuma",
+        "stars": 5,
+        "testimonial": "Pelayanannya memuaskan banget! Timnya ramah dan sangat profesional. Hasil kerja diluar ekspektasi."
+    },
+    {
+        "avatar": "asset/michaelchen.jpg",
+        "name": "Randy Pratama",
+        "stars": 5,
+        "testimonial": "Kualitas kerja yang luar biasa dengan harga yang sangat kompetitif. Tim yang berpengalaman dan selalu memberikan solusi terbaik."
+    },
+    {
+        "avatar": "asset/femaleai.jpg",
+        "name": "Femaeleai Tuti",
+        "stars": 5,
+        "testimonial": "Harga kompetitif dan kualitas pelayanan yang sangat baik. Proses pemesanan mudah dan cepat, sangat direkomendasikan!"
+    },
+    {
+        "avatar": "https://images.unsplash.com/photo-1614204424926-196a80bf0be8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+        "name": "Nayla Putri",
+        "stars": 5,
+        "testimonial": "Pelayanannya sat set banget, cepet pemasangan dan responnya. Barangnya juga bagus, puas banget sama rental ini."
+    },
+    {
+        "avatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+        "name": "Ismail Hidayat",
+        "stars": 5,
+        "testimonial": "Kepepet udah bingung h-1 acara, eh nemu rental ini. Barangnya lengkap, harga bersaing, dan pelayanannya ramah, kerjaannya cepet. Penyelemat banget!"
+    }
+]
