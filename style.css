@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 120px;
 }
 
 :root {
@@ -52,19 +52,19 @@ body {
     border: none;
     padding: 0.5rem 2rem;
     border-radius: 25px;
-    color: white; /* Ensure initial color is white */
+    color: white;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .btn-save:hover {
-    background-color: #3A5EFC; /* Keep the background color you want on hover */
+    background-color: #3A5EFC;
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
-    color: white; /* <--- ADD THIS LINE to keep text white on hover */
+    color: white;
 }
 
 .hero-section {

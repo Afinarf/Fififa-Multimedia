@@ -1,4 +1,4 @@
-            AOS.init();
+AOS.init();
 
             // Smooth scrolling for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -54,19 +54,78 @@
 
             // Testimonial carousel auto-play with pause on hover
             const testimonialCarousel = document.getElementById('testimonialCarousel');
-            const carousel = new bootstrap.Carousel(testimonialCarousel, {
-                interval: 5000,
-                wrap: true
-            });
+            let carousel; // Declare carousel here
 
-            testimonialCarousel.addEventListener('mouseenter', () => {
-                carousel.pause();
-            });
+            // Function to load testimonials from JSON
+            async function loadTestimonials() {
+                try {
+                    const response = await fetch('testimoni.json');
+                    const testimonials = await response.json();
+                    const carouselInner = document.getElementById('testimonialCarouselInner');
+                    const carouselIndicators = document.getElementById('testimonialCarouselIndicators');
 
-            testimonialCarousel.addEventListener('mouseleave', () => {
-                carousel.cycle();
-            });
+                    testimonials.forEach((testimonial, index) => {
+                        // Create carousel item
+                        const carouselItem = document.createElement('div');
+                        carouselItem.classList.add('carousel-item');
+                        if (index === 0) {
+                            carouselItem.classList.add('active');
+                        }
 
+                        // Create testimonial card content
+                        const starsHtml = '<i class="fas fa-star"></i>'.repeat(testimonial.stars);
+                        carouselItem.innerHTML = `
+                            <div class="testimonial-card">
+                                <div class="d-flex align-items-start">
+                                    <div class="testimonial-avatar me-3">
+                                        <img src="${testimonial.avatar}" alt="${testimonial.name}" class="rounded-circle" width="60" height="60">
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">${testimonial.name}</h5>
+                                        <div class="testimonial-stars mb-2">
+                                            ${starsHtml}
+                                        </div>
+                                        <p class="mb-0">${testimonial.testimonial}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        carouselInner.appendChild(carouselItem);
+
+                        // Create carousel indicator
+                        const indicatorButton = document.createElement('button');
+                        indicatorButton.setAttribute('type', 'button');
+                        indicatorButton.setAttribute('data-bs-target', '#testimonialCarousel');
+                        indicatorButton.setAttribute('data-bs-slide-to', index);
+                        indicatorButton.setAttribute('aria-label', `Slide ${index + 1}`);
+                        if (index === 0) {
+                            indicatorButton.classList.add('active');
+                            indicatorButton.setAttribute('aria-current', 'true');
+                        }
+                        carouselIndicators.appendChild(indicatorButton);
+                    });
+
+                    // Initialize the carousel after content is loaded
+                    carousel = new bootstrap.Carousel(testimonialCarousel, {
+                        interval: 5000,
+                        wrap: true
+                    });
+
+                    testimonialCarousel.addEventListener('mouseenter', () => {
+                        carousel.pause();
+                    });
+
+                    testimonialCarousel.addEventListener('mouseleave', () => {
+                        carousel.cycle();
+                    });
+
+                } catch (error) {
+                    console.error('Error fetching testimonials:', error);
+                }
+            }
+
+            // Call the function to load testimonials when the DOM is fully loaded
+            document.addEventListener('DOMContentLoaded', loadTestimonials);
 
             // Counter animation for stats
             function animateCounters() {
@@ -108,4 +167,3 @@
             if (statsSection) {
                 statsObserver.observe(statsSection);
             }
-    
