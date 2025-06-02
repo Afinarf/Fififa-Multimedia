@@ -77,8 +77,7 @@ body {
 
 .stats-section {
     background-color:#3A5EFC;
-    padding: 2rem 0 0;
-    height: 222px;
+    padding: 1rem 0;
     flex-shrink: 0;
 }
 
@@ -240,12 +239,13 @@ body {
 }
 
 /* Responsive Layout */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 .portfolio-card {
     height: auto;
     max-width: none;
+    margin-bottom: 15px;
 }
-}   
+}
 
 .services-section {
     background-color: var(--white);
