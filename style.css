@@ -51,10 +51,14 @@ body {
     background-color: var(--primary-blue);
     border: none;
     padding: 0.5rem 2rem;
-    border-radius: 25px;
+    border-radius: 20px;
     color: white;
     font-weight: 500;
     transition: all 0.3s ease;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .btn-save:hover {
@@ -290,14 +294,14 @@ body {
     background-color: #3A5EFC;
     border: none;
     padding: 0.5rem 2rem;
-    border-radius: 25px;
+    border-radius: 20px;
     color: white;
     font-weight: 500;
     transition: all 0.3s ease;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .btn-primary:hover {

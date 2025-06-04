@@ -33,25 +33,25 @@ body {
   color: #3A5EFC !important;
 }
 
-.btn-save {
+/* .btn-save {
     background-color: var(--primary-blue);
     border: none;
     padding: 0.5rem 2rem;
-    border-radius: 25px;
+    border-radius: 20px;
     color: white;
     font-weight: 500;
     transition: all 0.3s ease;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .btn-save:hover {
     background-color: #345efc;
     transform: translateY(-2px);
-    color: white; /* Added this line */
-}
+    color: white; Added this line */
+  /* } */
 /* Tombol Navbar */
 .btn-purple {
   background-color: #345efc;
@@ -59,13 +59,13 @@ body {
   border: none;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border-radius: 25px;
+  border-radius: 20px;
   font-weight: 500;
   transition: all 0.3s ease;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .btn-purple:hover,
