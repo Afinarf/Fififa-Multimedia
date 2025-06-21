@@ -500,6 +500,14 @@ body {
     font-weight: bold;
 }
 
+.social-links a {
+    margin-right: 15px;
+}
+
+.social-links a:last-child {
+    margin-right: 0;
+}
+
 .footer {
     background-color: #f8f9fa;
     border-top: 1px solid #dee2e6;
